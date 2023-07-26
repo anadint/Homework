@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
+
+int num = new Random().Next(100, 1000);
+int digit1 = num / 100;
+int digit2 = (num / 10) - (digit1*10);
+
+Console.WriteLine($"{num} -> {digit2}");
