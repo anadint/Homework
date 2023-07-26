@@ -4,13 +4,14 @@
 // 32679 -> 6
 
 Console.Write("Введите число: ");
-int num = int.Parse(Console.ReadLine());
-int digit3 = num % 10;
-if (num<100)
+string input = Console.ReadLine();
+
+if (input.Length >= 3)
 {
-    Console.WriteLine("Третьей цифры нет");
+    char thirdDigit = input[2];
+    Console.WriteLine($"Третья цифра числа {input} -> {thirdDigit}");
 }
 else
 {
-   Console.WriteLine($"Третья цифра числа {num} -> {digit3}"); 
+    Console.WriteLine("Третьей цифры нет.");
 }
